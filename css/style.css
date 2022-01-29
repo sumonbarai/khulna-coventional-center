@@ -1,0 +1,318 @@
+/*----------------------------------------------------
+
+Template Name   : conventional template
+Description     : it is a beautiful website
+Author          : sumon barai
+Version         : v 1.00
+
+-----------------------------------------------------*/
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300;400;600;700&family=Roboto:wght@400;700&display=swap');
+
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+/*---- Theme default css
+============================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+    font-size: 1.6rem;
+    background-color: #fff;
+}
+p {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+h1 {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    font-size: 4.8rem;
+}
+h2 {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    font-size: 3.8rem;
+    color: #0A0826;
+}
+h3 {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #231D4F;
+}
+h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.custom-btn{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-decoration: none;
+    background-color: #3F87F5;
+    color: #fff;
+    padding: 1rem 3.5rem;
+    border-radius: 1rem;
+    text-transform: capitalize;
+    border: 1px solid #3F87F5;
+    transition: background-color 1s ease;
+}
+.custom-btn:hover{
+    background-color: #fff;
+}
+.section-padding {
+    padding: 10rem 0;
+}
+
+
+/* header area  */
+
+.main-menu .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #3E3E3E;
+}
+.main-menu .navbar-nav .nav-item {
+    padding: 1.2rem;
+}
+.main-menu .navbar-nav .nav-item .nav-link{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #3E3E3E;
+    text-transform: capitalize;
+    border-bottom: 2px solid transparent;
+}
+.main-menu .navbar-nav .nav-item .nav-link:hover{
+    border-bottom: 2px solid #3F87F5;
+    color: #3F87F5;
+}
+/* banner area */
+.banner-area .banner-photo img{
+    height: calc(100vh - 7rem);
+    width: 100%;
+    object-fit: cover;
+}
+.banner-items .banner-title{
+    max-width: 88rem;
+    margin: 0 auto;
+    margin-bottom: 20rem;
+}
+
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+}
+.carousel-control-prev-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* package area */
+.package-area .package {
+    border-radius: 2rem;
+    background-color: #f4f4f461;
+    transition: all .3s ease-in;
+    min-height: 46.5rem !important;
+}
+.package-area .package:hover {
+    background-color: #3F87F5;
+    transform: scale(1.02);
+    box-shadow: rgba(63, 136, 245, 0.50) 0px 25px 20px -20px;
+}
+.package-area .package:hover .price,
+.package-area .package:hover .package-title,
+.package-area .package:hover .package-text,
+.package-area .package:hover .package-service {
+    color: #fff;
+}
+.package-area  .custom-badge {
+    position: absolute;
+    top: -1rem;
+    left: 70%;
+    text-transform: capitalize;
+    background-color: red !important;
+    color: #fff;
+    font-weight: 400;
+    padding: .5rem 1.3rem;
+    border-radius: 2rem;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+.package-area .package:hover .custom-badge {
+    opacity: 1;
+}
+.package-area .package .price{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: #231D4F;
+}
+.package-area .package .package-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #231D4F;
+    text-transform: capitalize;
+}
+.package-area .package .package-text,
+.package-area .package .package-service {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: #848199;
+}
+.package-area .package .custom-btn {
+    position: absolute;
+    width: 80%;
+    margin: auto;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FEF5FA;
+    display: block;
+    border: none;
+    color: #3F87F5;
+    text-align: center;
+}
+
+
+
+/* progress bar */
+.progress-area {
+    background-color: #f1f1f1;
+}
+.custom-progress-bar .title {
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.progress {
+    display: flex;
+    height: 1.8rem;
+    overflow: hidden;
+    font-size: 1.6rem;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+/* toast message  */
+#custom-toast {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #296EFD;
+    max-width: 50rem;
+    padding: 2rem;
+    border-right: 5px solid red;
+    border-radius: 2rem 0 0 2rem;
+    position: fixed;
+    top: 80%;
+    right: -1000px;
+    transition: right 2s ease;
+}
+#custom-toast p {
+    margin-bottom: 0;
+}
+#custom-toast .close {
+    position: absolute;
+    top: -1rem;
+    left: -.4rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #fff;
+}
+/* faq section */
+.according-title {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    color: #383838;
+    padding: 2.5rem;
+}
+.accordion-text {
+    font-family: 'Inter', sans-serif; 
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #7E848C;
+}
+/* footer area*/
+.footer {
+    background-color: #0B0D17;
+    color: #D9DBE1;
+}
+.footer .right-part span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 2.3rem;
+    text-transform: capitalize;
+}
+.footer .right-part img {
+    width: 13.5rem;
+}
+/* Media Query css  */
+/* extra large device css */
+@media (max-width: 1399.98px) {
+    
+ }
+/* large device css */
+@media (max-width: 1199.98px) { 
+
+}
+/* medium device css */
+@media (max-width: 991.98px) {
+    .main-menu .navbar-nav .nav-item {
+        padding: 0.2rem;
+    }
+ }
+/* small device css */
+@media (max-width: 767.98px) { 
+    html {
+        font-size: 60.5%;
+    }
+    .section-padding {
+        padding: 6rem 0;
+    }
+    .footer .d-flex {
+        flex-direction: column !important;
+    }
+}
+/* extra small device css */
+@media (max-width: 575.98px) { 
+    html {
+        font-size: 55.5%;
+    }
+    .section-padding {
+        padding: 4rem 0;
+    }
+    .package-area .package {
+        background-color: #f1f1f1;
+    }
+}
+
+
+
